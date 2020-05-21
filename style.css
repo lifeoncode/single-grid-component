@@ -27,8 +27,6 @@ body{
 
 .wrap{
     position: relative;
-    height: 100vh;
-    overflow: hidden;
 }
 
 
@@ -164,11 +162,23 @@ header p{
 
 
 /* media queries */
+
+@media screen and (max-width: 1100px){
+
+    header > div{
+        width: 85%;
+    }
+    .grid_inner .left > div,
+    .grid_inner .right > div{
+        width: 70%;
+    }
+}
+
+
+
 @media screen and (max-width: 430px){
 
-    .wrap{
-        height: auto;
-    }
+    
     
     header{
         padding: 2rem 0;
